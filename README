@@ -1,0 +1,9 @@
+============
+Django Direct Connect
+============
+
+A Django app that implements the Direct Connect payment processing API (http://www.1directconnect.com/).
+
+It is currently incomplete.  It will process a credit card payment and receive the response.  It provides Django Model and Field definitions to store server responses from Direct Connect, as well as encrypted customer shipping information.  It also provides basic Django Forms for collecting credit card and address data.
+
+There are many more things possible with the Direct Connect API.  Some of these will be implemented in future versions, and some may not.  Contributions are welcome.
