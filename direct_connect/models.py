@@ -52,8 +52,8 @@ class Address:
 		self.countrycode = countrycode
 		self.email_address = email_address or ""
 	def getAddressString(self):
-		return self.delimiter.join((self.firstname, self.lastname, self.street, self.street2, self.city,
-			self.state, self.zipcode, self.country, self.countrycode, self.email_address,))	
+		return self.delimiter.join((self.firstname, self.lastname, self.street, self.city,
+			self.state, self.zipcode, self.country, self.countrycode, self.email_address, self.street2,))
 	def parseDecrypted(self, inStr):
 		s = inStr.split(self.delimiter)
 		self.initialize(s[0], s[1], s[2], s[3], s[4], s[5], s[6], s[7], s[8], s[9])
