@@ -16,7 +16,7 @@ class CheckoutForm(forms.Form):
 		addr = Address()
 		addr.initialize(self.cleaned_data['firstname'], self.cleaned_data['lastname'], self.cleaned_data['street'],
 			self.cleaned_data['city'], self.cleaned_data['state'],self.cleaned_data['zip'], "", 
-			self.cleaned_data['countrycode'], self.cleaned_data['street2'])
+			self.cleaned_data['countrycode'], None, self.cleaned_data['street2'])
 		return addr
 		
 class CheckoutFormWithCard(CheckoutForm):
