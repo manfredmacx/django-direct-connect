@@ -48,7 +48,7 @@ for dirpath, dirnames, filenames in os.walk(dc_dir):
 setup(
     name = 'django-direct-connect',
     description = 'A Django app that implements the Direct Connect payment processing API (http://www.1directconnect.com/).',
-    version = 0.9.0,
+    version = '0.9.0',
     author = 'Jon Renaut',
     author_email = 'jon@manfredmacx.com',
     url = 'http://github.com/jrenaut/django-direct-connect.git',
