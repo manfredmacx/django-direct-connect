@@ -45,17 +45,10 @@ for dirpath, dirnames, filenames in os.walk(dc_dir):
     elif filenames:
         data_files.append([dirpath, [os.path.join(dirpath, f) for f in filenames]])
 
-# Dynamically calculate the version based on direct_connect.VERSION
-version_tuple = __import__('direct_connect').VERSION
-if version_tuple[2] is not None:
-    version = "%d.%d_%s" % version_tuple
-else:
-    version = "%d.%d" % version_tuple[:2]
-
 setup(
     name = 'django-direct-connect',
     description = 'A Django app that implements the Direct Connect payment processing API (http://www.1directconnect.com/).',
-    version = version,
+    version = 0.9.0,
     author = 'Jon Renaut',
     author_email = 'jon@manfredmacx.com',
     url = 'http://github.com/jrenaut/django-direct-connect.git',
