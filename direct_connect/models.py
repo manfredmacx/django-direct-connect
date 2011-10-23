@@ -2,7 +2,8 @@ import binascii
 from direct_connect import qaes
 from django.db import models
 from django.contrib.auth.models import User
-from mmcd.custom.base.models import Customer, Transaction
+#TODO - REFACTOR
+from mmcd.custom.product.models import Customer, Transaction
 from django.conf import settings
 
 '''
