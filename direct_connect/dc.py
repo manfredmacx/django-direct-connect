@@ -52,11 +52,11 @@ class DirectConnect:
 		sr.result = respdict.get("Result", "ERROR")
 		sr.respMsg = respdict.get("RespMSG", "ERROR")
 		sr.message = respdict.get("Message", "ERROR")
-		sr.extData = respdict.get("ExtData", None)
-		sr.authCode = respdict.get("AuthCode", None)
-		sr.pnref = respdict.get("PNRef", None)
-		sr.hostCode = respdict.get("HostCode", None)
-		sr.getOrigResult = respdict.get("GetGetOrigResult", None)
+		sr.extData = respdict.get("ExtData", "ERROR")
+		sr.authCode = respdict.get("AuthCode", "ERROR")
+		sr.pnref = respdict.get("PNRef", "ERROR")
+		sr.hostCode = respdict.get("HostCode", "ERROR")
+		sr.getOrigResult = respdict.get("GetGetOrigResult", "ERROR")
 		sr.save()
 		return sr
 
